@@ -1,0 +1,25 @@
+public class PrimeChecker {
+
+    public static void main(String[] args) {
+        int number = 29; // The number to check for primality
+
+        if (isPrime(number)) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is not a prime number.");
+        }
+    }
+    public static boolean isPrime(int n) {
+        // Handle edge cases: 0, 1, and negative numbers are not prime
+        if (n <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false; // If divisible by any number, it's not prime
+            }
+        }
+
+        return true; // If no divisors are found, the number is prime
+    }
+}
