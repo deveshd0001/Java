@@ -10,6 +10,6 @@ public class airthmetic {
         System.out.println("Addition of two numbers is "+(a+b));
         System.out.println("Subtraction of two numbers is "+(a-b));
         System.out.println("Multiplication of two numbers is "+(a*b));
-        System.out.println("Divison of two numbers is "+(a/b));
+        System.out.println("Division of two numbers is "+(a/b));
 }
 }
